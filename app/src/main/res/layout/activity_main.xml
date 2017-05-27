@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zver.firsttry.MainActivity">
+    <include layout="@layout/content_main" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="516dp">
+        <ListView
+            android:id="@+id/listArticles"
+            android:layout_width="match_parent"
+            android:layout_height="520dp">
+        </ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_x="20dp"
+        android:layout_y="102dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:onClick="onMyButtonClick"
+            android:text="Избранное"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="444dp"
+            android:layout_weight="0.29" />
+
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
